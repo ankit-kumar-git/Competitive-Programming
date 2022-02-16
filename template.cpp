@@ -2,8 +2,8 @@
 using namespace std;
 typedef long long ll;
 #define endl "\n"
-//freopen("input.txt", "r", stdin);
-//freopen("output.txt", "w", stdout);
+// freopen("input.txt", "r", stdin);
+// freopen("output.txt", "w", stdout);
 ll gcd(ll a, ll b)
 {
     if (b == 0)
@@ -23,6 +23,8 @@ ll countBits(ll n)
 
 int main()
 {
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     ll t;
