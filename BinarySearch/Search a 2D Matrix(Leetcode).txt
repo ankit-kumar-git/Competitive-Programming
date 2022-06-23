@@ -1,0 +1,22 @@
+Amazing solution where 2d matrix is converted to 1D without extra space;
+Look how mid is used when its 2d array.
+ bool method2(vector<vector<int>>& matrix, int target) {
+        // treat 2d matrix into an array
+        int r = matrix.size();
+        int c = matrix[0].size();
+        
+        int low = 0, high = r * c - 1;
+        while(low <= high) {
+            int mid = low + (high - low) / 2;
+            if(matrix[mid / c][mid % c] == target) {
+                return true;
+            }
+            else if(matrix[mid / c][mid % c] < target) {
+                low = mid + 1;
+            }
+            else {
+                high = mid - 1;
+            }
+        }
+        return false;
+    }

@@ -1,0 +1,4 @@
+1.CSES PROBLEMS and some AtCoder's given in daily task
+2.https://codeforces.com/problemset/problem/1151/B
+2.https://atcoder.jp/contests/dp/tasks/dp_j
+3.https://codingcompetitions.withgoogle.com/codejam/round/0000000000877ba5/0000000000aa9280

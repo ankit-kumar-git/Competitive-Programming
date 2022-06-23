@@ -1,0 +1,17 @@
+1.If tree has N nodes , then it has ecxctly N-1 edges.
+2.A tree is always a connected graph and cannot have cycles.
+
+
+------------------------------------------------------------------------------
+                       DFS TRAVERSAL
+
+vector<vector<int>> adj; // This stores all the nodes connected to a particular
+                            node including parent node;
+void dfs(int source,int parent){
+    for(auto &child:adj[source]){
+        if(child==parent) continue;
+        dfs(child,source);
+    }
+}
+// Here visited array can be avoided if we use parent also an argument of dfs();
+

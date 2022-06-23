@@ -1,0 +1,23 @@
+4 steps to solve a dp problem.
+--> Define state;
+--> Define transition / recurrence relation
+--> Think of base cases.
+--> Final subproblem
+
+----------------------------------------------------------------------
+How to identify a DP problem?
+
+Repeating subtasks: If I have the answer of state, then why should I calculate it again and waste time
+
+Pro Tips for contests:
+
+1.Look for small constraints in the problem. (Most probably it would be dp and not greedy)
+2.Identify states and transition time for each state.  
+3.Calculate time complexity as (number of states * transition time for each state). 
+4.If this number fits into your Time limit (Great), if not, try to see if you can skip some states and still get the right answer. 
+5.Try to reduce the transition time by using some Data Structure if transition time is the bottleneck
+6.Never try to over optimize. If your current states and transition time fit into your Time Limit, just code it and do not optimize it further.
+
+
+---------------------ADVICES-----------------------------------------------
+1.Always Always try to tranform the question in some previously studied question and try to relate with some standard problems.

@@ -1,0 +1,39 @@
+1.ceil(y/x)=(y+x-1)/x; // Use this to find ceil instead of ceil function.
+
+
+
+
+2.While solving an "INTERACTIVE PROBLEM", use endl istead of new line"\n" 
+  character because the endl flushes the output where as \n does not and in
+  interactive problems we need to flush the output every time and not save
+  to buffer which normally happens.
+  OR you can also use cout.flush() after ouput line to flush the output.
+  
+
+
+3. Usually in programming languages, integer division c/d for negative c returns ceil(c/d) instead of floor(c/d);
+   So we can use this for division instead of normal division value.
+   li accurateFloor(li a, li b) {
+	    li val = a / b;
+    	while (val * b > a)
+		      val--;
+	    return val;
+}
+
+
+
+4. If you want binary representation of a number to become double, 
+    then just append 1 '0' at the end of binary representation.So its decimal
+    values now gets multiplied by 2.
+    e.g. 4-> 100       7->111
+         4*2=8->1000   7*2=14->1110
+
+        
+
+5. To get/generate binary representation of a number upto say 10 bits(0 to 9)
+  
+  for(int i=9;i>=0;i--){
+    cout<<((nums>>i)&1)<<" ";
+  }
+  For integer No of bits at max can be 32(31st to 0th bit);
+  In that case start from 31 till 0 in for loop

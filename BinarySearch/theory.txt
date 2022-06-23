@@ -1,0 +1,7 @@
+
+------------------->   BINARY SEARCH RELATED  <------------------------
+2. For finding mid during binary search, instead of mid=(low+high)/2, make habbit
+   of using mid=low+(high-low)/2;  // This avoids overflows.
+
+3.While dealing with binary search on double value, make sure to give precision
+  else your search space would become infinite.
